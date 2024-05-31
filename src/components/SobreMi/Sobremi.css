@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+
+.tituloSobremi{
+    font-family: 'Codystar', sans-serif;
+
+;
+    
+}
+
+.profile-card-container-sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250vh;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .profile-card-sobremi{
+    transform: rotateZ(-1deg); /* efecto torcido*/
+    margin-top: 50px; /* Reducir el margen superior */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+  width: 73%;
+  height: 73%;
+  border: none;
+  border-top-left-radius: 40px; /* Radio de esquina superior izquierda */
+  border-top-right-radius: 10px; /* Radio de esquina superior derecha */
+  border-bottom-left-radius: 10px; /* Radio de esquina inferior izquierda */
+  border-bottom-right-radius: 40px; /* Radio de esquina inferior derecha */
+  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2); /* Añade una sombra para simular el relieve */
+  transition: transform 0.5s, box-shadow 0.5s; /* Agrega transición para la sombra */
+
+  perspective: 1000px;
+  transition: transform 0.5s;
+  background-color:#4a4891;
+  overflow: hidden;
+  }
+
+  .profile-content-sobremi {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+  }
+  .profile-card-sobremi:hover {
+    transform: rotateY(20deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Incrementa la intensidad de la sombra en hover */
+  
+  }

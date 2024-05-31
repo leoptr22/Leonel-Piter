@@ -1,0 +1,115 @@
+/* Propuesta.css */
+
+/* Agregamos un margen inferior a los elementos Slider */
+.Slider {
+    margin-bottom: 30px;
+}
+
+/* Resto de tus estilos CSS */
+.propuesta-card-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    height: 100vh;
+}
+
+.propuesta-card {
+    width: 75%;
+    height: auto;
+    border: none;
+    border-radius: 40px 10px 10px 40px;
+    box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    background-color: #4a4891;
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.propuesta-card:hover {
+    transform: rotateY(20deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.foto-propuesta {
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-container .description {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 14px;
+    max-height: 100%;
+    z-index: 10;
+}
+
+.foto-container:hover .description {
+    opacity: 1;
+}
+
+.description p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.tituloPropuesta {
+    font-size: 20px;
+    color: rgb(189, 193, 193);
+    text-align: center;
+}
+
+/* Estilos adicionales para el slider */
+.slick-slider {
+    margin: 0 auto !important;
+    width: 70%;
+    max-width: 1000px;
+}
+
+/* Estilos adicionales para los contenedores de las imágenes */
+.slick-slide {
+    text-align: center;
+}
+
+/* Estilos para las imágenes dentro del slider */
+.slick-slide img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70%;
+    max-width: none;
+    height: auto;
+}
