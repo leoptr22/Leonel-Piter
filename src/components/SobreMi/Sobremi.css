@@ -2,8 +2,9 @@
 
 .tituloSobremi{
     font-family: 'Codystar', sans-serif;
-
-;
+color: azure;
+font-size: 50px;
+text-align: center;
     
 }
 
@@ -11,29 +12,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250vh;
+    height: 190vh;
     margin-bottom: 20px;
     margin-top: 50px;
   }
 
   .profile-card-sobremi{
-    transform: rotateZ(-1deg); /* efecto torcido*/
-    margin-top: 50px; /* Reducir el margen superior */
-    margin-bottom: 10px; /* Reducir el margen inferior */
-  width: 73%;
-  height: 73%;
-  border: none;
-  border-top-left-radius: 40px; /* Radio de esquina superior izquierda */
-  border-top-right-radius: 10px; /* Radio de esquina superior derecha */
-  border-bottom-left-radius: 10px; /* Radio de esquina inferior izquierda */
-  border-bottom-right-radius: 40px; /* Radio de esquina inferior derecha */
-  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2); /* Añade una sombra para simular el relieve */
-  transition: transform 0.5s, box-shadow 0.5s; /* Agrega transición para la sombra */
-
-  perspective: 1000px;
-  transition: transform 0.5s;
-  background-color:#4a4891;
-  overflow: hidden;
+    transform: rotateZ(1deg); /* efecto torcido*/
+    position: relative;
+    width: 90%;
+    height: 75%;
+    border: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    background-color: #4a4891;
+    overflow: hidden;
   }
 
   .profile-content-sobremi {

@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
 
-
-
 .profile-card-container {
-  margin-top: 80px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,74 +10,61 @@
 
 .profile-card {
   transform: rotateZ(1deg); /* efecto torcido*/
-
-  position: relative; /* Asegura que la posición absoluta de la foto se base en este contenedor */
-  width: 70%;
-  height: 70%;
+  position: relative;
+  width: 90%;
+  height: 75%;
   border: none;
-  border-top-left-radius: 40px; /* Radio de esquina superior izquierda */
-  border-top-right-radius: 10px; /* Radio de esquina superior derecha */
-  border-bottom-left-radius: 10px; /* Radio de esquina inferior izquierda */
-  border-bottom-right-radius: 40px; /* Radio de esquina inferior derecha */
-  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2); /* Añade una sombra para simular el relieve */
-  transition: transform 0.5s, box-shadow 0.5s; /* Agrega transición para la sombra */
-
+  border-top-left-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
-  transition: transform 0.5s;
-  background-color:#4a4891;
-  overflow: hidden; /* Asegura que la foto no se salga del contenedor */
-
+  background-color: #4a4891;
+  overflow: hidden;
 }
 
 .profile-card:hover {
   transform: rotateY(20deg);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Incrementa la intensidad de la sombra en hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
   transform: rotateZ(1deg); /* efecto torcido*/
   transform: rotateZ(-1deg); /* efecto torcido*/
-
 }
 
-
-
-.tituloResumen{
+.tituloResumen {
   font-family: 'Codystar', sans-serif;
-  margin-top: 0; /* Ajusta el margen superior del título */
+  margin-top: 0;
 }
 
-p{
+p {
   font-family: 'Advent Pro', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: azure;
-
+  line-height: 1.4;
 }
 
 .profile-content {
   display: flex;
   align-items: center;
   padding: 10px;
-}
-
-.profile-image {
   position: relative;
-  bottom: 0; /* Posiciona la imagen en la parte inferior del contenedor */
-  left: 0; /* Ajusta la posición izquierda */
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
 }
+
 .profile-image {
-  width: 45%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%; /* Cambia este valor según lo que desees */
 }
 
-
-.profile-image img {
-  width: 100%;
-  border-radius: 20%;
-}
 
 .summary {
-  width: 85%;
+  width: 65%;
   padding-left: 20px;
+  margin-left: 35%;
 }
 
 .social-links {
@@ -93,13 +76,14 @@ p{
 }
 
 .social-icon {
-  width: 30px;
+  margin-left: 30px;
+  width: 50px;
   height: auto;
 }
 
 .cv-link {
   display: flex;
-  align-items: center;
+  align-items:end;
   text-decoration: none;
   color: #333;
 }
@@ -110,8 +94,9 @@ p{
   margin-right: 10px;
 }
 
-.download-cv{
-margin-top: 30px;
+.download-cv {
+  margin-top: 30px;
+margin-left: 50%;
+
+
 }
-
-

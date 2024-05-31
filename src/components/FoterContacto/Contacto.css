@@ -1,4 +1,6 @@
 /* Contacto.css */
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Rubik+Burned&display=swap');
+
 
 .profile-card-contenedor {
     display: flex;
@@ -14,7 +16,7 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #6c6464;
-    padding: 20px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
 
@@ -36,6 +38,7 @@
   .link-item {
     display: flex;
     align-items: center;
+    
     margin-bottom: 30px; /* Espaciado entre los íconos */
   }
   .social-icon {

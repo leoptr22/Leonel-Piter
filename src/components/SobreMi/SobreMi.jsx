@@ -8,9 +8,9 @@ const SobreMi = () => {
         
         <div className="profile-content-sobremi">
          
-          <div className="summary">
+          <div className="summarySobreMi">
             
-            <h1 className='tituloSobremi'>Sobre Mi</h1>
+            <h1 id="sobre-mi" className='tituloSobremi'>Sobre Mi</h1>
             <h5 className='tituloSobreMiResumen'>Biografía</h5>
             <p>
             
