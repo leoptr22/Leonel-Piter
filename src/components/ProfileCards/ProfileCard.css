@@ -12,7 +12,7 @@
   transform: rotateZ(1deg); /* efecto torcido*/
   position: relative;
   width: 90%;
-  height: 75%;
+  height: 80%;
   border: none;
   border-top-left-radius: 40px;
   border-top-right-radius: 10px;
@@ -42,7 +42,7 @@ p {
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: azure;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .profile-content {

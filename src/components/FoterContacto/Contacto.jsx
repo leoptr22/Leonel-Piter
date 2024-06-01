@@ -6,7 +6,7 @@ import githubLogo from '../../assets/github.png';
 import whatsapp from '../../assets/whatsapp.png';
 import mail from '../../assets/mail.png';
 
-import profileImage from '../../assets/contacto.png';
+import profileImage from '../../assets/robotcontacto.png';
 
 const Contacto = () => {
   return (

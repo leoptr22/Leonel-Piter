@@ -52,7 +52,7 @@
   }
   
   .profile-imagen {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    border-radius: 20%; /* Opcional: para hacer la imagen circular */
+    width: 130%;
+    margin-right: 115px; /* Ajusta el ancho al 100% del contenedor */
   }
   
