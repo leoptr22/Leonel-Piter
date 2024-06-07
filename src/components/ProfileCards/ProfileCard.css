@@ -13,7 +13,7 @@
   transform: rotateZ(1deg);
   position: relative;
   width: 90%;
-  height: 80%;
+  height: 90%;
   border: none;
   border-top-left-radius: 40px;
   border-top-right-radius: 10px;
@@ -24,7 +24,7 @@
   perspective: 1000px;
   background-color: #4a4891;
   overflow: hidden;
-  margin-top: 110px;
+  margin-top: 160px;
 }
 
 .profile-card:hover {
@@ -46,6 +46,7 @@ p {
   color: azure;
   margin-bottom: 10px;
   text-align: justify;
+  line-height: 1.9
 }
 
 .profile-content {
@@ -58,7 +59,7 @@ p {
 .profile-image {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 47%;
   bottom: 0%;
   transform: translateY(-50%);
   width: 5%;
@@ -118,7 +119,7 @@ p {
 
   .cv-link {
     width: 100%; /* Ajustar el ancho máximo */
-    text-align: right; /* Alinear el contenido a la derecha */
+    text-align: left; /* Alinear el contenido a la derecha */
     margin-top: 40px; /* Ajustar margen superior */
     justify-content: flex-end;
   }
@@ -134,5 +135,6 @@ p {
     color: #ffffff; /* Cambiar color del texto */
     margin-bottom: 10px;
     text-align: center; /* Centrar texto */
+    
   }
 }

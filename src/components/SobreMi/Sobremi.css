@@ -7,6 +7,14 @@
   margin-bottom: 20px;
   margin-top: 50px;
 }
+.habilidades {
+  line-height: 2.5;
+}
+
+.misValores{line-height: 2.5;
+}
+
+
 
 .profile-card-sobremi {
   transform: rotateZ(1deg); /* efecto torcido */

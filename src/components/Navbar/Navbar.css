@@ -1,52 +1,71 @@
-/* Estilos generales para el Navbar */
+/* Estilos para la navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #7370c0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
-  z-index: 1000;
+  position: fixed; /* Fija la navbar en la parte superior */
+  text-align: center; /* Centra el contenido del texto */
+  top: 0; /* Coloca la navbar en la parte superior de la página */
+  width: 100%; /* Hace que la navbar abarque todo el ancho de la página */
+  margin-bottom: 200px; /* Espacio inferior de 200px */
+  background-color: #7370c0; /* Color de fondo de la navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+  padding: 20px 0; /* Espaciado interno en la parte superior e inferior */
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
 }
 
-/* Estilos para los ítems del Navbar */
 .navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  list-style-type: none; /* Quita el estilo de lista por defecto */
+  margin: 0; /* Quita el margen por defecto */
+  padding: 0; /* Quita el relleno por defecto */
+  display: flex; /* Usa flexbox para la disposición */
+  justify-content: center; /* Centra los ítems en el eje horizontal */
+  align-items: center; /* Centra los ítems en el eje vertical */
 }
 
-.navbar li {
-  margin: 0 20px;
+.navbar ul li {
+  margin: 0 10px; /* Margen horizontal entre los ítems de la lista */
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.3s ease;
+.navbar ul li a {
+  display: block; /* Hace que el enlace sea un bloque */
+  color: white; /* Color del texto del enlace */
+  text-align: center; /* Centra el texto del enlace */
+  padding: 14px 16px; /* Espaciado interno en el enlace */
+  text-decoration: none; /* Quita el subrayado del enlace */
 }
 
-.navbar a:hover {
-  color: #007bff;
+.navbar ul li a:hover {
+  background-color: #111; /* Cambia el color de fondo al pasar el ratón */
 }
 
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 0; /* Reducir el padding para dispositivos móviles */
-  }
+/* Estilos para el botón de menú en dispositivos móviles */
+.navbar .menu-button {
+  display: none; /* Oculta el botón por defecto */
+  background-color: #333; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 14px 16px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cursor en forma de mano */
+  font-size: 16px; /* Tamaño de la fuente */
+}
 
+/* Ocultar el menú en dispositivos móviles por defecto */
+@media (max-width: 600px) {
   .navbar ul {
-    flex-direction: column; /* Cambiar la dirección del flexbox para dispositivos móviles */
-    align-items: center; /* Centrar los elementos en el eje horizontal */
+    display: none; /* Oculta el menú */
+    flex-direction: column; /* Dispone los ítems en columna */
+    width: 100%; /* Hace que el menú abarque todo el ancho */
   }
 
-  .navbar li {
-    margin: 10px 0; /* Espaciado entre los elementos del menú */
+  .navbar ul li {
+    float: none; /* Quita el flote */
+    width: 100%; /* Hace que los ítems abarquen todo el ancho */
+  }
+
+  .navbar .menu-button {
+    display: block;
+    background-color: none; /* Muestra el botón */
+  }
+
+  .navbar ul.show {
+    display: flex; /* Muestra el menú cuando se activa la clase 'show' */
   }
 }

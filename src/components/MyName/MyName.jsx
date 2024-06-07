@@ -34,7 +34,7 @@ const MyName = () => {
 
   return (
     <div>
-      <h1 className="header-text">Hola, soy Leonel...{""}</h1>
+      <h1 className="header-text"><span className='hola'>Hola¡ </span>, Soy Leonel ...{""}</h1>
       
       <p id="textoTypeIt" className="typeit-text"></p>
     
