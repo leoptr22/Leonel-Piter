@@ -5,6 +5,7 @@
   top: 0; /* Coloca la navbar en la parte superior de la página */
   width: 100%; /* Hace que la navbar abarque todo el ancho de la página */
   margin-bottom: 200px; /* Espacio inferior de 200px */
+  height: 30px;
   background-color: #7370c0; /* Color de fondo de la navbar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
   padding: 20px 0; /* Espaciado interno en la parte superior e inferior */

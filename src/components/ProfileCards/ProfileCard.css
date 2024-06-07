@@ -13,7 +13,7 @@
   transform: rotateZ(1deg);
   position: relative;
   width: 90%;
-  height: 90%;
+  height: 100%;
   border: none;
   border-top-left-radius: 40px;
   border-top-right-radius: 10px;
@@ -24,7 +24,8 @@
   perspective: 1000px;
   background-color: #4a4891;
   overflow: hidden;
-  margin-top: 160px;
+  margin-top: 200px;
+  
 }
 
 .profile-card:hover {
@@ -99,15 +100,14 @@ p {
 @media (max-width: 768px) {
   .profile-card {
     width: 90%;
-    height: 75%;
-    margin-top: 370px; /* Ajustar margen superior */
+    height: 90%;
+    margin-top: 240px; /* Ajustar margen superior */
     margin-bottom: 150px; /* Ajustar margen inferior */
   }
 
   .profile-image {
     width: 20%; /* Reducir el tamaño de la imagen */
     opacity: 0.3; /* Establecer la opacidad */
-    border: radius 20%; /* Corregir error de sintaxis */
   }
 
   .summary {

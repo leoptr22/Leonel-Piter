@@ -31,6 +31,8 @@
   perspective: 1000px;
   background-color: #4a4891;
   overflow: hidden;
+   margin-top:200px ;
+   margin-bottom: 200px;
 }
 
 .profile-content-sobremi {
