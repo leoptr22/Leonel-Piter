@@ -95,13 +95,13 @@ p {
 @media (max-width: 768px) {
   .profile-card {
     width: 90%;
-    height: 65%;
-    margin-top: 150px; /* Ajustar margen superior */
-    margin-bottom: 50px; /* Ajustar margen inferior */
+    height: 75%;
+    margin-top: 500px; /* Ajustar margen superior */
+    margin-bottom: 150px; /* Ajustar margen inferior */
   }
 
   .profile-image {
-    width: 30%; /* Reducir el tamaño de la imagen */
+    width: 20%; /* Reducir el tamaño de la imagen */
     opacity: 0.3; /* Establecer la opacidad */
     border: radius 20%; /* Corregir error de sintaxis */
   }
