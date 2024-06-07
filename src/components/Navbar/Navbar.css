@@ -1,3 +1,4 @@
+/* Estilos generales para el Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -6,20 +7,10 @@
   background-color: #7370c0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
-  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  z-index: 1000;
 }
 
-
-.navbar ul li a {
-  transition: color 0.5s ease-in-out;
-}
-
-.navbar ul li a:hover {
-  color: #ff6600; /* Cambia esto al color deseado */
-}
-
-
-/* Resto del CSS sigue igual */
+/* Estilos para los ítems del Navbar */
 .navbar ul {
   list-style: none;
   margin: 0;
@@ -42,4 +33,20 @@
 
 .navbar a:hover {
   color: #007bff;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0; /* Reducir el padding para dispositivos móviles */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Cambiar la dirección del flexbox para dispositivos móviles */
+    align-items: center; /* Centrar los elementos en el eje horizontal */
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Espaciado entre los elementos del menú */
+  }
 }

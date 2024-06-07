@@ -2,27 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Rubik+Burned&display=swap');
 
 
-.profile-card-contenedor {
+.profile-card-contenedor1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 250px;
   }
   
-  .profile-card {
-    width: 80%; /* Ajusta el ancho según sea necesario */
-    height: 20%;
-    max-width: 1200px; /* Máximo ancho para grandes pantallas */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #6c6464;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
-
+  .profile-card1 {
+    transform: rotateZ(1deg); /* efecto torcido*/
+    position: relative;
+    width: 90%;
+    height: 80%;
+    border: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    background-color: #4a4891;
+    overflow: hidden;
   }
   
-  .profile-content.contacto {
+  
+  .profile-content.contacto1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +50,20 @@
   .social-icon {
     margin-right: 100px; /* Espaciado entre el ícono y el texto */
   }
+
+  .social-icon {
+    margin-left: 30px;
+    width: 50px;
+    height: auto;
+  }
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+  }
+
   .foto {
     display: flex;
     justify-content: center;

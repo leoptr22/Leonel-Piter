@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
 
+/* Estilos para escritorio */
 .profile-card-container {
   display: flex;
   justify-content: center;
@@ -9,81 +10,62 @@
 }
 
 .profile-card {
-  transform: rotateZ(1deg); /* efecto torcido*/
+  transform: rotateZ(1deg);
   position: relative;
   width: 90%;
   height: 80%;
+  max-width: 600px; /* Ajustar el ancho máximo */
   border: none;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
   background-color: #4a4891;
   overflow: hidden;
+  margin-top: 110px;
 }
 
 .profile-card:hover {
   transform: rotateY(20deg);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-  transform: rotateZ(1deg); /* efecto torcido*/
-  transform: rotateZ(-1deg); /* efecto torcido*/
 }
 
 .tituloResumen {
-  font-family: 'Codystar', sans-serif;
   margin-top: 0;
+  font-size: 28px;
+  font-family: 'Codystar', sans-serif;
+  color: azure;
 }
 
 p {
   font-family: 'Advent Pro', sans-serif;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 16px;
   color: azure;
-  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .profile-content {
   display: flex;
   align-items: center;
-  padding: 10px;
-  position: relative;
+  padding: 20px; /* Aumentar el espacio interno */
 }
 
 .profile-image {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5%; /* Cambia este valor según lo que desees */
+  width: 20%; /* Ajustar el tamaño de la imagen */
+  border-radius: 10px; /* Agregar borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  margin-right: 20px; /* Ajustar margen derecho */
 }
-
 
 .summary {
-  width: 65%;
-  padding-left: 20px;
-  margin-left: 35%;
-}
-
-.social-links {
-  display: flex;
-}
-
-.social-links a {
-  margin-right: 10px;
-}
-
-.social-icon {
-  margin-left: 30px;
-  width: 50px;
-  height: auto;
+  width: 80%; /* Ajustar el ancho del resumen */
 }
 
 .cv-link {
   display: flex;
-  align-items:end;
+  align-items: end;
+  justify-content: flex-end;
   text-decoration: none;
   color: #333;
 }
@@ -96,7 +78,40 @@ p {
 
 .download-cv {
   margin-top: 30px;
-margin-left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+    margin-top: 50px; /* Ajustar margen superior */
+    margin-bottom: 50px; /* Ajustar margen inferior */
+  }
 
+  .profile-image {
+    width: 30%; /* Reducir el tamaño de la imagen */
+    opacity: 0.15; /* Establecer la opacidad */
+    border-radius: 50%;
+  }
+
+  .summary {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cv-link {
+    width: 100%; /* Ajustar el ancho máximo */
+    text-align: right; /* Alinear el contenido a la derecha */
+    margin-top: 20px; /* Ajustar margen superior */
+    justify-content: flex-end;
+  }
+
+  .cv-icon {
+    width: 30px; /* Reducir el tamaño del icono */
+    margin-right: 10px; /* Establecer margen derecho */
+  }
 }

@@ -10,9 +10,9 @@ import profileImage from '../../assets/robotcontacto.png';
 
 const Contacto = () => {
   return (
-    <div id='contacto' className="profile-card-contenedor">
-      <div className="profile-card">
-        <div className="profile-content contacto">
+    <div id='contacto' className="profile-card-contenedor1">
+      <div className="profile-card1">
+        <div className="profile-content contacto1">
           <div className="links">
             <div className="link-item">
               <a href="https://www.linkedin.com/in/leonelpiter/" target="_blank" rel="noopener noreferrer">
