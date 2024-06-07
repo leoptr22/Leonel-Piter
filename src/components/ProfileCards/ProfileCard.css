@@ -96,7 +96,7 @@ p {
   .profile-card {
     width: 90%;
     height: 75%;
-    margin-top: 500px; /* Ajustar margen superior */
+    margin-top: 300px; /* Ajustar margen superior */
     margin-bottom: 150px; /* Ajustar margen inferior */
   }
 
