@@ -77,18 +77,21 @@ p {
   justify-content: flex-end;
   text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 
 .cv-icon {
   width: 40px;
   height: auto;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .download-cv {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 /* Estilos para dispositivos móviles */
@@ -96,7 +99,7 @@ p {
   .profile-card {
     width: 90%;
     height: 75%;
-    margin-top: 300px; /* Ajustar margen superior */
+    margin-top: 370px; /* Ajustar margen superior */
     margin-bottom: 150px; /* Ajustar margen inferior */
   }
 
