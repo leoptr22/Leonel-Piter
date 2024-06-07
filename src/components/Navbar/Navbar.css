@@ -3,11 +3,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #7370c0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
+
+
+.navbar ul li a {
+  transition: color 0.5s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #ff6600; /* Cambia esto al color deseado */
+}
+
 
 /* Resto del CSS sigue igual */
 .navbar ul {
@@ -24,7 +34,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: #563030;
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s ease;

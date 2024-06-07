@@ -10,7 +10,7 @@ const SobreMi = () => {
          
           <div className="summarySobreMi">
             
-            <h1 id="sobre-mi" className='tituloSobremi'>Sobre Mi</h1>
+            <h1  className='tituloSobremi'>Sobre Mi</h1>
             <h5 className='tituloSobreMiResumen'>Biografía</h5>
             <p>
             
@@ -30,7 +30,7 @@ Soy Leonel Piter, un profesional de 40 años, con experiencia en industria y esp
             </p>
            
 
-            <h5 className='tituloSobreMiResumen'>Mis valores</h5>
+            <h5  id="sobre-mi" className='tituloSobreMiResumen'>Mis valores</h5>
             <p>
            * Resolutividad: Me esfuerzo por encontrar soluciones efectivas a los problemas que enfrento.<br/>
             <br/>

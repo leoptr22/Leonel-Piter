@@ -10,7 +10,7 @@ import profileImage from '../../assets/robotcontacto.png';
 
 const Contacto = () => {
   return (
-    <div className="profile-card-contenedor">
+    <div id='contacto' className="profile-card-contenedor">
       <div className="profile-card">
         <div className="profile-content contacto">
           <div className="links">
