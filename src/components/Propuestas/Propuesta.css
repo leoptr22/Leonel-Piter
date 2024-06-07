@@ -13,11 +13,10 @@
     align-items: center;
     margin-bottom: 50px;
     margin-top: 30px;
-    height: 100vh;
 }
 
 .propuesta-card {
-    width: 75%;
+    width: 90%;
     height: auto;
     border: none;
     border-radius: 40px 10px 10px 40px;
@@ -25,9 +24,9 @@
     transition: transform 0.5s, box-shadow 0.5s;
     perspective: 1000px;
     background-color: #4a4891;
-    margin-top: 80px;
     overflow: hidden;
     position: relative;
+    margin-top: 40px;
 }
 
 .propuesta-card:hover {
