@@ -20,24 +20,25 @@ const SobreMi = () => {
 
               <h5 className='tituloSobreMiResumen'>Habilidades</h5>
               <p className="habilidades">
-              &#9827; Especialista en Calidad y Productividad: Con 15 años de experiencia en el departamento de calidad, he desarrollado habilidades en análisis de laboratorio y control de procesos. <br/>
-              &#9827; Apasionado por la Tecnología: He aprendido a programar para adaptar aplicaciones web a mi entorno laboral y mejorar la eficiencia y dinamismo.<br/>
-              &#9827; Resolutivo y Autodidacta: He desarrollado habilidades blandas como resolutivo y autodidacta para superar desafíos y aprender constantemente.<br/>
-              &#9827; Predisposición para Aprender: Me siento cómodo aprendiendo nuevas tecnologías y habilidades para mantenerme actualizado en el mercado laboral. <br/>
-              &#9827; Experiencia en la Industria: He trabajado por 20 años en la industria, lo que me ha dado una comprensión profunda de los procesos y necesidades del sector.<br/>
-              &#9827; Desarrollador de Soluciones Personalizadas: He creado soluciones personalizadas para mejorar la eficiencia y dinamismo en mi entorno laboral.<br/>
-              &#9827; Apasionado por la Innovación: Me siento apasionado por la innovación y siempre estoy buscando formas de mejorar procesos y soluciones.<br/>
+              &#9827; Habilidades en análisis de laboratorio y control de procesos.<br/>
+              &#9827; Adaptar aplicaciones web para mejorar eficiencia y dinamismo.<br/>
+              &#9827; Resolutivo, autodidacta, adaptable, abierto al aprendizaje constante..<br/>
+              &#9827; Experiencia industrial: 20 años comprendiendo procesos y necesidades.<br/>
+              &#9827; Apasionado por innovación y mejorar procesos constantemente.<br/>
               </p>
 
               <h5 id="sobre-mi" className='tituloSobreMiResumen'>Mis valores</h5>
 <p className="misValores">
-&#9827;; Resolutividad: Me esfuerzo por encontrar soluciones efectivas a los problemas que enfrento.
+&#9827;   Voluntad y esfuerzo.
 <br/>
-  &#9827;; Autodidactismo: Me gusta aprender nuevas tecnologías y habilidades para mantenerme actualizado.
+  &#9827; Autodidacta.
   <br/>
-  &#9827;; Predisposición para Aprender: Me siento cómodo aprendiendo nuevas cosas y me esfuerzo por mejorar constantemente.<br/>
-  &#9827;; Detallismo: Me aseguro de que todo sea precisamente como lo quiero, ya sea en mi trabajo o en mi vida personal.<br/>
-  &#9827;; Innovación: Me siento apasionado por la innovación y siempre estoy buscando formas de mejorar procesos y soluciones.<br/>
+  &#9827; Aprendizaje continuo
+<br/>
+  &#9827; Detallista y preciso.
+<br/>
+  &#9827;Apasionado por innovar y mejorar procesos.
+<br/>
 </p>
 
             </div>

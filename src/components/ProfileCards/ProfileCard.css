@@ -60,7 +60,7 @@ p {
 .profile-image {
   position: absolute;
   left: 0;
-  top: 47%;
+  top: 50%;
   bottom: 0%;
   transform: translateY(-50%);
   width: 5%;
@@ -100,7 +100,7 @@ p {
 @media (max-width: 768px) {
   .profile-card {
     width: 90%;
-    height: 90%;
+    height: 95%;
     margin-top: 240px; /* Ajustar margen superior */
     margin-bottom: 150px; /* Ajustar margen inferior */
   }

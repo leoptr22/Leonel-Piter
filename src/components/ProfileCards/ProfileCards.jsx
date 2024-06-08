@@ -14,7 +14,6 @@ const ProfileCard = () => {
           </div>
           <div className="summary">
             <MyName />
-            <h2 className='tituloResumen'>Resumiendo . . .</h2>
             
             <p>
               Profesional con 15 años de experiencia en control de calidad en manufactura, garantizando productos de alta calidad a lo largo del proceso de producción. Actualmente, estudio programación y desarrollo web, adquiriendo competencias en JavaScript, HTML, CSS y React. Mi meta es fusionar mi experiencia en calidad con habilidades tecnológicas para mejorar la eficiencia y calidad en las empresas.

@@ -6,7 +6,7 @@
   width: 100%; /* Hace que la navbar abarque todo el ancho de la página */
   margin-bottom: 200px; /* Espacio inferior de 200px */
   height: 30px;
-  background-color: #7370c0; /* Color de fondo de la navbar */
+  background-color: #4a4891;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
   padding: 20px 0; /* Espaciado interno en la parte superior e inferior */
   z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
@@ -63,10 +63,15 @@
 
   .navbar .menu-button {
     display: block;
-    background-color: none; /* Muestra el botón */
+    background-color: #4a4891;
   }
 
   .navbar ul.show {
     display: flex; /* Muestra el menú cuando se activa la clase 'show' */
+  }
+
+  .show{
+    background-color: #6460cd;
+
   }
 }
