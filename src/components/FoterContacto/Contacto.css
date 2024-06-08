@@ -55,7 +55,7 @@
 
 /* Estilos para los íconos sociales */
 .social-icon {
-  margin-left: 30px;
+  margin-left: 20px;
   width: 50px;
   height: auto;
 }
@@ -84,6 +84,9 @@
   opacity: 1;
 }
 
+h2{
+  margin-left: 10px;
+}
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -125,10 +128,9 @@
   /* Redefinición de estilos para los íconos sociales */
   .social-icon {
     /* Se elimina el margen izquierdo */
-    margin-left: 0;
+    margin-left: 10px;
     margin-right: 10px;
     /* Se ajusta el margen inferior */
-    margin-bottom: 20px;
   }
 
   /* Redefinición de estilos para la foto de perfil */

@@ -15,6 +15,10 @@ const ProfileCard = () => {
     }
   }, [inView]);
 
+  const handleDownload = () => {
+    window.open("https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing", "_blank");
+  };
+
   return (
     <div id="inicio" className={`profile-card-container ${isVisible ? 'visible' : ''}`} ref={ref}>
       <div className="profile-card">
@@ -27,10 +31,8 @@ const ProfileCard = () => {
             <p>
               Profesional con 15 años de experiencia en control de calidad en manufactura, garantizando productos de alta calidad a lo largo del proceso de producción. Actualmente, estudio programación y desarrollo web, adquiriendo competencias en JavaScript, HTML, CSS y React. Mi meta es fusionar mi experiencia en calidad con habilidades tecnológicas para mejorar la eficiencia y calidad en las empresas.
             </p>
-            <div className="download-cv">
-              <a href="https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing" className='descargarcv' download>
-                <img src={cvIcon} alt="CV" className="cv-icon" />
-              </a>
+            <div className="download-cv" onClick={handleDownload}>
+              <img src={cvIcon} alt="CV" className="cv-icon" />
             </div>
           </div>
         </div>

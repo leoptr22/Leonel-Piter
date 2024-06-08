@@ -33,11 +33,11 @@ const SobreMi = () => {
 
               <h5 className="tituloSobreMiResumen">Habilidades</h5>
               <p className="habilidades">
-                &#9827; Habilidades en análisis de laboratorio y control de procesos.<br />
-                &#9827; Adaptar aplicaciones web para mejorar eficiencia y dinamismo.<br />
-                &#9827; Resolutivo, autodidacta, adaptable, abierto al aprendizaje constante..<br />
-                &#9827; Experiencia industrial: 20 años comprendiendo procesos y necesidades.<br />
-                &#9827; Apasionado por innovación y mejorar procesos constantemente.<br />
+                &#9827;     Habilidades en análisis de laboratorio y control de procesos.<br />
+                &#9827;     Adaptar aplicaciones web para mejorar eficiencia y dinamismo.<br />
+                &#9827;     Resolutivo, autodidacta, adaptable, abierto al aprendizaje constante..<br />
+                &#9827;     Experiencia industrial: 20 años comprendiendo procesos y necesidades.<br />
+                &#9827;     Apasionado por innovación y mejorar procesos constantemente.<br />
               </p>
 
               <h5 id="sobre-mi" className="tituloSobreMiResumen">Mis valores</h5>
