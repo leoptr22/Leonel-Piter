@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Propuesta.css';
 import '../ProfileCards/ProfileCard.css';
 import Modal from './Modal';
+import { useInView } from 'react-intersection-observer';
 
 import foto1 from '../../assets/foto1.png';
 import foto2 from '../../assets/foto2.png';
 import foto3 from '../../assets/foto3.png';
 import propuesta2 from '../../assets/propuesta2.png';
 
-
 const PropuestaCard = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [descripcionModal, setDescripcionModal] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
 
   const settings = {
     dots: true,
@@ -41,8 +50,8 @@ const PropuestaCard = () => {
   };
 
   return (
-    <div id="propuestas" className="propuesta-card-contenedor">
-      <div className="propuesta-card">
+    <div id="propuestas" className={`propuesta-card-contenedor ${isVisible ? "visible" : ""}`} ref={ref}>
+      <div className={`propuesta-card ${isVisible ? "visible" : ""}`}>
         
         <div  className='tituloPropuesta'><h1> Propuestas realizadas</h1></div>
         {propuestas.map((grupo, index) => (

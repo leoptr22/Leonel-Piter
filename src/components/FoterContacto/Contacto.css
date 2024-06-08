@@ -1,78 +1,146 @@
 /* Contacto.css */
-@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Rubik+Burned&display=swap');
 
-
+/* Estilos generales */
 .profile-card-contenedor1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 250px;
+  /* Inicialmente, el componente tiene una opacidad de 0 */
+  opacity: 0;
+  /* Se aplica una transición suave para la opacidad */
+  transition: opacity 0.5s ease;
+}
+
+.profile-card1 {
+  /* Efecto de inclinación */
+  transform: rotateZ(1deg);
+  position: relative;
+  width: 90%;
+  height: 80%;
+  border: none;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+  /* Se aplica una transición suave para la transformación y la sombra */
+  transition: transform 0.5s, box-shadow 0.5s;
+  perspective: 1000px;
+  background-color: #4a4891;
+  overflow: hidden;
+}
+
+.profile-content.contacto1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para los enlaces sociales y la información de contacto */
+.links {
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los íconos a la izquierda */
+  width: 50%; /* Ajusta el ancho de los enlaces */
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Espaciado entre los íconos */
+}
+
+/* Estilos para los íconos sociales */
+.social-icon {
+  margin-left: 30px;
+  width: 50px;
+  height: auto;
+}
+
+/* Estilos para la foto de perfil */
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Asegura que la foto no exceda el 35% del ancho */
+}
+
+.profile-imagen {
+  width: 130%;
+  margin-right: 115px; /* Ajusta el ancho al 100% del contenedor */
+}
+
+/* Estilos para la aparición gradual del componente cuando se hace scroll */
+.profile-card-contenedor1.visible {
+  /* Se cambia la opacidad a 1 cuando el componente es visible */
+  opacity: 1;
+}
+
+.profile-card1.visible {
+  /* Se cambia la opacidad a 1 cuando el componente es visible */
+  opacity: 1;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Redefinición de estilos para el contenedor principal */
+  .profile-card-contenedor1 {
+    /* Se ajusta el margen superior e inferior para dispositivos móviles */
+    margin-top: 100px;
+    margin-bottom: 30px;
   }
-  
+
+  /* Redefinición de estilos para la tarjeta de perfil */
   .profile-card1 {
-    transform: rotateZ(1deg); /* efecto torcido*/
-    position: relative;
-    width: 90%;
-    height: 80%;
-    border: none;
-    border-top-left-radius: 40px;
+    /* Se elimina el efecto de inclinación para dispositivos móviles */
+    transform: none;
+    /* Se ajusta el ancho para dispositivos móviles */
+    width: 100%;
+    /* Se ajustan los radios de las esquinas */
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 40px;
-    box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
-    transition: transform 0.5s, box-shadow 0.5s;
-    perspective: 1000px;
-    background-color: #4a4891;
-    overflow: hidden;
+    border-bottom-right-radius: 10px;
   }
-  
-  
+
+  /* Redefinición de estilos para el contenido del perfil */
   .profile-content.contacto1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .links {
-    color: #ccc;
-    display: flex;
+    /* Se cambia el diseño a una columna para dispositivos móviles */
     flex-direction: column;
-    align-items: flex-start; /* Alinea los íconos a la izquierda */
-    width: 50%; /* Ajusta el ancho de los enlaces */
-  }
-  .link-item {
-    display: flex;
     align-items: center;
-    
-    margin-bottom: 30px; /* Espaciado entre los íconos */
-  }
-  .social-icon {
-    margin-right: 100px; /* Espaciado entre el ícono y el texto */
   }
 
+  /* Redefinición de estilos para los enlaces */
+  .links {
+    /* Se ajusta el ancho para dispositivos móviles */
+    width: 100%;
+    /* Se cambia la alineación a centrada */
+    align-items: center;
+  }
+
+  /* Redefinición de estilos para los íconos sociales */
   .social-icon {
-    margin-left: 30px;
-    width: 50px;
-    height: auto;
-  }
-  .social-links {
-    display: flex;
-  }
-  
-  .social-links a {
+    /* Se elimina el margen izquierdo */
+    margin-left: 0;
     margin-right: 10px;
+    /* Se ajusta el margen inferior */
+    margin-bottom: 20px;
   }
 
+  /* Redefinición de estilos para la foto de perfil */
   .foto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%; /* Asegura que la foto no exceda el 35% del ancho */
+    /* Se ajusta el ancho para dispositivos móviles */
+    width: 100%;
   }
-  
+
   .profile-imagen {
-    width: 130%;
-    margin-right: 115px; /* Ajusta el ancho al 100% del contenedor */
+    /* Se ajusta el ancho para dispositivos móviles */
+    width: 90%;
+    /* Se elimina el margen derecho */
+    margin-right: 0;
   }
-  
+}

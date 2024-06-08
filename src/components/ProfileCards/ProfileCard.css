@@ -9,6 +9,15 @@
   height: 100vh;
 }
 
+
+.profile-card-container {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.profile-card-container.visible {
+  opacity: 1;
+}
 .profile-card {
   transform: rotateZ(1deg);
   position: relative;
@@ -101,8 +110,8 @@ p {
   .profile-card {
     width: 90%;
     height: 95%;
-    margin-top: 240px; /* Ajustar margen superior */
-    margin-bottom: 150px; /* Ajustar margen inferior */
+    margin-top: 350px; /* Ajustar margen superior */
+    margin-bottom: 190px; /* Ajustar margen inferior */
   }
 
   .profile-image {
@@ -136,5 +145,14 @@ p {
     margin-bottom: 10px;
     text-align: center; /* Centrar texto */
     
+  }
+
+  .profile-card-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .profile-card-container.visible {
+    opacity: 1;
   }
 }
