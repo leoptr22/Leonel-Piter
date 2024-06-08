@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import ProfileCard from './components/ProfileCards/ProfileCards';
 import PropuestaCard from './components/Propuestas/Propuesta';
 import SobreMi from './components/SobreMi/SobreMi';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SobreMi/>
       <PropuestaCard/>
       <Contacto />
+      <Footer/>
     </>
 
     

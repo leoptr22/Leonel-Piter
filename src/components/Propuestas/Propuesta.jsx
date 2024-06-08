@@ -12,6 +12,10 @@ import foto1 from '../../assets/foto1.png';
 import foto2 from '../../assets/foto2.png';
 import foto3 from '../../assets/foto3.png';
 import propuesta2 from '../../assets/propuesta2.png';
+import film from '../../assets/film.png';
+import film2 from '../../assets/film2.png';
+
+
 
 const PropuestaCard = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -41,6 +45,11 @@ const PropuestaCard = () => {
     {
       fotos: [propuesta2,propuesta2,propuesta2 ],
       descripcion: "Control de procesos de produccion, con segimiento online / on demand, realizado con React y Google Sheet."
+    },
+
+    {
+      fotos: [film,film2,film ],
+      descripcion: "buscador de peliculas por titulo, valoracion y demas informacion a traves de IMDB"
     },
   ];
 

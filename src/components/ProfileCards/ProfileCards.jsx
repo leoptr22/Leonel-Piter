@@ -16,7 +16,7 @@ const ProfileCard = () => {
   }, [inView]);
 
   const handleDownload = () => {
-    window.open("https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing", "_blank");
+    window.location.href = "https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing";
   };
 
   return (
