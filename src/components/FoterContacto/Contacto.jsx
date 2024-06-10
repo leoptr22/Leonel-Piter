@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Contacto.css';
-import linkedinLogo from '../../assets/linkedin.png';
-import githubLogo from '../../assets/github.png';
-import whatsapp from '../../assets/whatsapp.png';
-import mail from '../../assets/mail.png';
+import linkedinLogo from '../../assets/linkedin1.png';
+import githubLogo from '../../assets/github1.png';
+import whatsapp from '../../assets/wsp.png';
+import mail from '../../assets/correo.png';
 import profileImage from '../../assets/robotcontacto.png';
 import { useInView } from 'react-intersection-observer';
 
@@ -48,7 +48,7 @@ const Contacto = () => {
             </div>
             <div id='contacto' className='link-item'>
               <a
-                href='https://www.instagram.com/tu_usuario'
+                href='https://wa.link/b7684k'
                 target='_blank'
                 rel='noopener noreferrer'
               >

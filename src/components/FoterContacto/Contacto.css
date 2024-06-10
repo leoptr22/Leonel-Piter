@@ -28,7 +28,7 @@
   /* Se aplica una transición suave para la transformación y la sombra */
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
-  background-color: #4a4891;
+  background-color: none;
   overflow: hidden;
 }
 
@@ -55,9 +55,10 @@
 
 /* Estilos para los íconos sociales */
 .social-icon {
-  margin-left: 20px;
+  margin-left: 200px;
   width: 50px;
   height: auto;
+  color: aliceblue;
 }
 
 /* Estilos para la foto de perfil */
@@ -128,8 +129,8 @@ h2{
   /* Redefinición de estilos para los íconos sociales */
   .social-icon {
     /* Se elimina el margen izquierdo */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     /* Se ajusta el margen inferior */
   }
 
@@ -141,7 +142,7 @@ h2{
 
   .profile-imagen {
     /* Se ajusta el ancho para dispositivos móviles */
-    width: 90%;
+    width: 92%;
     /* Se elimina el margen derecho */
     margin-right: 0;
   }

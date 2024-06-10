@@ -47,7 +47,7 @@
   box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
-  background-color: #4a4891;
+  background-color: none;
   overflow: hidden;
   margin-top: 200px;
   margin-bottom: 200px;
