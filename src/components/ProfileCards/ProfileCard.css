@@ -116,7 +116,7 @@ p {
 
   .profile-image {
     width: 20%; /* Reducir el tamaño de la imagen */
-    opacity: 0.3; /* Establecer la opacidad */
+    opacity: 0.5; /* Establecer la opacidad */
   }
 
   .summary {
