@@ -24,11 +24,12 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 40px;
-  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
+  box-shadow: 0 8px 16px rgba(144, 143, 143, 0.2);
   /* Se aplica una transición suave para la transformación y la sombra */
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
-  background-color: none;
+  background-color: black;
+  opacity: 0.8;
   overflow: hidden;
 }
 
@@ -109,6 +110,8 @@ h2{
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color: black;
+  opacity: 0.5;
   }
 
   /* Redefinición de estilos para el contenido del perfil */

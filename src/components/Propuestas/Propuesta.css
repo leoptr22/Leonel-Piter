@@ -7,14 +7,7 @@
 }
 
 
-.propuesta-card-contenedor {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .propuesta-card-contenedor.visible {
-    opacity: 1;
-  }
+
 
 /* Resto de tus estilos CSS */
 .propuesta-card-contenedor {
@@ -33,12 +26,23 @@
     box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
     transition: transform 0.5s, box-shadow 0.5s;
     perspective: 1000px;
-    background-color: none;
+    background-color: black;
+    opacity: 0.8;
     overflow: hidden;
     position: relative;
     margin-top: 40px;
     cursor: pointer;
 }
+
+
+.propuesta-card-contenedor {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .propuesta-card-contenedor.visible {
+    opacity: 1;
+  }
 
 .propuesta-card:hover {
     transform: rotateY(20deg);
@@ -132,12 +136,5 @@
       margin-bottom: 0px;
     }
     
-    .propuesta-card-contenedor {
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-    
-    .propuesta-card-contenedor.visible {
-      opacity: 1;
-    }
+   
   }
