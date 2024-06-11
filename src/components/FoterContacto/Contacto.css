@@ -8,9 +8,9 @@
   margin-bottom: 50px;
   margin-top: 250px;
   /* Inicialmente, el componente tiene una opacidad de 0 */
-  opacity: 0;
+  opacity: 0.8;
   /* Se aplica una transición suave para la opacidad */
-  transition: opacity 0.5s ease;
+  transition: opacity 15s ease;
 }
 
 .profile-card1 {
@@ -24,12 +24,12 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 40px;
-  box-shadow: 0 8px 16px rgba(144, 143, 143, 0.2);
+  box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
   /* Se aplica una transición suave para la transformación y la sombra */
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.8; /* Opacidad predeterminada */
   overflow: hidden;
 }
 
@@ -86,7 +86,7 @@
   opacity: 1;
 }
 
-h2{
+h2 {
   margin-left: 10px;
 }
 
@@ -97,6 +97,8 @@ h2{
     /* Se ajusta el margen superior e inferior para dispositivos móviles */
     margin-top: 100px;
     margin-bottom: 30px;
+    /* Ajuste de opacidad para dispositivos móviles */
+    opacity: 0.8;
   }
 
   /* Redefinición de estilos para la tarjeta de perfil */
@@ -107,11 +109,11 @@ h2{
     width: 90%;
     /* Se ajustan los radios de las esquinas */
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
-    background-color: black;
-  opacity: 0.5;
+    /* Se aplica la transición de opacidad para dispositivos móviles */
+    transition: opacity 0.5s ease;
   }
 
   /* Redefinición de estilos para el contenido del perfil */

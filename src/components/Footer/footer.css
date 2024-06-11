@@ -1,7 +1,8 @@
 .footer {
-    background-color: #56565d;
+    background-color: #121212;
     display: flex;
     justify-content: center; /* Alinear horizontalmente */
     align-items: center; /* Alinear verticalmente */
     height: 70px;
+    color: aliceblue;
 }

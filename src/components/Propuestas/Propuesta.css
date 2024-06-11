@@ -6,18 +6,22 @@
     margin-bottom: 30px;
 }
 
-
-
-
-/* Resto de tus estilos CSS */
+/* Contenedor de las tarjetas de propuesta */
 .propuesta-card-contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 30px;
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.5s ease;
+}
+  
+.propuesta-card-contenedor.visible {
+    opacity: 1; /* Opacidad al hacer visible */
 }
 
+/* Estilos para las tarjetas de propuesta */
 .propuesta-card {
     width: 90%;
     height: auto;
@@ -33,16 +37,6 @@
     margin-top: 40px;
     cursor: pointer;
 }
-
-
-.propuesta-card-contenedor {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .propuesta-card-contenedor.visible {
-    opacity: 1;
-  }
 
 .propuesta-card:hover {
     transform: rotateY(20deg);
@@ -130,11 +124,11 @@
     height: auto;
 }
 
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .propuesta-card {
-      margin-top: 40px;
-      margin-bottom: 0px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        opacity: 0.8; /* Ajuste de opacidad para dispositivos móviles */
     }
-    
-   
-  }
+}
