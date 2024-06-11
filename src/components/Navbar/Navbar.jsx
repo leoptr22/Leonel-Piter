@@ -11,6 +11,13 @@ const Navbar = () => {
   const handleDownloadCV = () => {
     // Reemplaza 'ruta/cv.pdf' con la ruta real de tu archivo CV
     window.location.href = 'ruta/cv.pdf';
+    // Cierra el menú después de hacer clic en un ítem
+    setMenuOpen(false);
+  };
+
+  // Función para manejar el clic en un ítem del menú y cerrar el menú
+  const handleMenuItemClick = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -19,10 +26,10 @@ const Navbar = () => {
         ☰
       </button>
       <ul className={menuOpen ? "show" : ""}>
-        <li><a href="#inicio" onClick={(e) => smoothScroll(e, 'inicio')}>Inicio</a></li>
-        <li><a href="#sobre-mi" onClick={(e) => smoothScroll(e, 'sobre-mi')}>Sobre Mí</a></li>
-        <li><a href="#propuestas" onClick={(e) => smoothScroll(e, 'propuestas')}>Propuestas</a></li>
-        <li><a href="#contacto" onClick={(e) => smoothScroll(e, 'contacto')}>Contacto</a></li>
+        <li><a href="#inicio" onClick={(e) => {smoothScroll(e, 'inicio'); handleMenuItemClick();}}>Inicio</a></li>
+        <li><a href="#sobre-mi" onClick={(e) => {smoothScroll(e, 'sobre-mi'); handleMenuItemClick();}}>Sobre Mí</a></li>
+        <li><a href="#propuestas" onClick={(e) => {smoothScroll(e, 'propuestas'); handleMenuItemClick();}}>Propuestas</a></li>
+        <li><a href="#contacto" onClick={(e) => {smoothScroll(e, 'contacto'); handleMenuItemClick();}}>Contacto</a></li>
         <li><a href="https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing" onClick={handleDownloadCV}>Descargar CV</a></li>
       </ul>
     </nav>
