@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 
@@ -54,7 +54,7 @@
 p {
   font-family: 'Advent Pro', sans-serif;
   font-size: 16px;
-  color: azure;
+  color: white;
   margin-bottom: 10px;
   text-align: justify;
   line-height: 1.9
@@ -70,7 +70,7 @@ p {
 .profile-image {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 33%;
   bottom: 0%;
   transform: translateY(-50%);
   width: 5%;
