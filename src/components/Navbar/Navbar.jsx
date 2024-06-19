@@ -30,7 +30,7 @@ const Navbar = () => {
         <li><a href="#sobre-mi" onClick={(e) => {smoothScroll(e, 'sobre-mi'); handleMenuItemClick();}}>Sobre Mí</a></li>
         <li><a href="#propuestas" onClick={(e) => {smoothScroll(e, 'propuestas'); handleMenuItemClick();}}>Propuestas</a></li>
         <li><a href="#contacto" onClick={(e) => {smoothScroll(e, 'contacto'); handleMenuItemClick();}}>Contacto</a></li>
-        <li><a href="https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing" onClick={handleDownloadCV}>Descargar CV</a></li>
+        <li><a href="https://drive.google.com/file/d/1dI9HjcyKk9eYnEk994ogb4_CCLktQFBo/view" onClick={handleDownloadCV}>Descargar CV</a></li>
       </ul>
     </nav>
   );
