@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ProfileCard.css';
 import MyName from '../MyName/MyName';
-import profileImage from '../../assets/profile1.png';
+import profileImage from '../../assets/perfil2.png';
 import cvIcon from '../../assets/iconocv.png';
 import { useInView } from 'react-intersection-observer';
 
