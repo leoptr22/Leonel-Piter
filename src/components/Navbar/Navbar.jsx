@@ -26,11 +26,11 @@ const Navbar = () => {
         ☰
       </button>
       <ul className={menuOpen ? "show" : ""}>
-        <li><a href="#inicio" onClick={(e) => {smoothScroll(e, 'inicio'); handleMenuItemClick();}}>Inicio</a></li>
-        <li><a href="#sobre-mi" onClick={(e) => {smoothScroll(e, 'sobre-mi'); handleMenuItemClick();}}>Sobre Mí</a></li>
-        <li><a href="#propuestas" onClick={(e) => {smoothScroll(e, 'propuestas'); handleMenuItemClick();}}>Propuestas</a></li>
-        <li><a href="#contacto" onClick={(e) => {smoothScroll(e, 'contacto'); handleMenuItemClick();}}>Contacto</a></li>
-        <li><a href="https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing" onClick={handleDownloadCV}>Descargar CV</a></li>
+        <button id="btn"><span href="#inicio" onClick={(e) => {smoothScroll(e, 'inicio'); handleMenuItemClick();}}>Inicio</span></button>
+        <button id="btn"><span href="#sobre-mi" onClick={(e) => {smoothScroll(e, 'sobre-mi'); handleMenuItemClick();}}>Sobre Mí</span></button>
+        <button id="btn"><span href="#propuestas" onClick={(e) => {smoothScroll(e, 'propuestas'); handleMenuItemClick();}}>Propuestas</span></button>
+        <button id="btn"><span href="#contacto" onClick={(e) => {smoothScroll(e, 'contacto'); handleMenuItemClick();}}>Contacto</span></button>
+        <button id="btn"><span href="https://drive.google.com/file/d/1Ojxuz1r1lkL9TLoECfQYBJYv7Af_h3Jq/view?usp=sharing" onClick={handleDownloadCV}>Descargar CV</span></button>
       </ul>
     </nav>
   );
