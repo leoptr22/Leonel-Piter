@@ -40,7 +40,7 @@
 
 .propuesta-card:hover {
     transform: rotateY(20deg);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 22px 28px rgba(195, 195, 200, 0.484);
 }
 
 .profile-content {
