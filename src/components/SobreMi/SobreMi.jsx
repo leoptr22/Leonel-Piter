@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Sobremi.css";
-import "../ProfileCards/ProfileCard.css";
 import { useInView } from "react-intersection-observer";
+import yojaja from "../../assets/yojaja.png";
 
 const SobreMi = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,43 +16,40 @@ const SobreMi = () => {
   return (
     <div
       id="inicio"
-      className={`profile-card-container-sobremi ${
-        isVisible ? "visible" : ""
-      }`}
+      className={`profile-card-container-sobremi ${isVisible ? "visible" : ""}`}
       ref={ref}
     >
-      <div id="sobre-mi" className={`profile-card-sobremi ${isVisible ? "visible" : ""}`}>
+      <div id="sobre-mi" className="profile-card-sobremi">
         <div className="profile-content-sobremi">
-          <div className="summarySobreMi">
-            <h1 className="tituloSobremi" >Sobre Mí</h1>
+          <div className={`summarySobreMi ${isVisible ? "slide-in-left" : ""}`}>
+            <h1 className="tituloSobremi">Sobre Mí</h1>
             <div className="contentSobreMi">
-              <h5 className="tituloSobreMiResumen" >Biografía</h5>
+              <h5 className="tituloSobreMiResumen">Biografía</h5>
               <p>
-                Soy Leonel Piter, un profesional de 40 años, con experiencia en la industria y especializado en calidad y productividad. He trabajado por 20 años en diferentes roles, incluyendo 15 años en el departamento de calidad, donde he desarrollado habilidades en análisis de laboratorio y control de procesos.
+                Soy Leonel Piter, profesional con 20 años de experiencia en la industria, especializado en calidad y productividad. Actualmente, estudio desarrollo web en la UNER, ampliando mis habilidades en tecnologías como JavaScript, React, HTML y CSS. Mi objetivo es fusionar mi experiencia en calidad con conocimientos tecnológicos para optimizar procesos y mejorar resultados.
               </p>
 
-              <h5 className="tituloSobreMiResumen" >Habilidades</h5>
-              <p className="habilidades">
-                &#9827;     Habilidades en análisis de laboratorio y control de procesos.<br />
-                &#9827;     Adaptar aplicaciones web para mejorar eficiencia y dinamismo.<br />
-                &#9827;     Resolutivo, autodidacta, adaptable, abierto al aprendizaje constante..<br />
-                &#9827;     Experiencia industrial: 20 años comprendiendo procesos y necesidades.<br />
-                &#9827;     Apasionado por innovación y mejorar procesos constantemente.<br />
-              </p>
-
-              <h5  className="tituloSobreMiResumen">Mis valores</h5>
-              <p className="misValores">
-                &#9827; Voluntad y esfuerzo.
-                <br />
-                &#9827; Autodidacta.
-                <br />
-                &#9827; Aprendizaje continuo
-                <br />
-                &#9827; Detallista y preciso.
-                <br />
-                &#9827; Apasionado por innovar y mejorar procesos.
-                <br />
-              </p>
+              <div className="card-habilidades-valores">
+                <div className="card-section">
+                  <h5 className="tituloSobreMiResumen">Habilidades</h5>
+                  <ul className="habilidades">
+                    <li>&#9827; Análisis de laboratorio y control de procesos</li>
+                    <li>&#9827; Adaptación de aplicaciones web para mejorar eficiencia</li>
+                    <li>&#9827; Resolutivo, autodidacta y adaptable</li>
+                    <li>&#9827; Amplia experiencia en procesos industriales</li>
+                    <li>&#9827; Innovación y mejora continua en procesos</li>
+                  </ul>
+                </div>
+                <div className="card-section">
+                  <h5 className="tituloSobreMiResumen">Mis Valores</h5>
+                  <ul className="misValores">
+                    <li>&#9827; Voluntad y esfuerzo</li>
+                    <li>&#9827; Aprendizaje continuo</li>
+                    <li>&#9827; Detallismo y precisión</li>
+                    <li>&#9827; Pasión por innovar y mejorar procesos</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

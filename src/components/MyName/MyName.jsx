@@ -1,31 +1,46 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import TypeIt from 'typeit';
-import './MyName.css'; // Importa el archivo CSS
+import gsap from 'gsap';
+import './MyName.css';
 
-const MyName = () => { 
+const MyName = () => {
+  const textoRef = useRef(null);
+  const nombreRef = useRef(null);
+
   useEffect(() => {
-    const instance = new TypeIt("#textoTypeIt", {
-      strings:"",
-      speed: 200,
+    // Configurar TypeIt
+    const instance = new TypeIt(textoRef.current, {
+      speed: 150,
       loop: true
-    }).go()
-
-    instance
+    })
       .type("Calidad")
-      .pause(1000) 
+      .pause(1000)
       .delete(7)
       .type("Iso 9001")
-      .pause(1000) 
+      .pause(1000)
       .delete(8)
       .type("Productividad")
-      .pause(1000) 
+      .pause(1000)
       .delete(13)
       .type("Javascript")
-      .pause(1000) 
+      .pause(1000)
       .delete(10)
       .type("React")
-      .pause(1000) 
+      .pause(1000)
       .go();
+
+    // Animaciones de GSAP
+    gsap.fromTo(
+      nombreRef.current,
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power2.out", delay: 0.2 }
+    );
+
+    gsap.fromTo(
+      textoRef.current,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power2.out", delay: 1.5 }
+    );
 
     return () => {
       instance.destroy();
@@ -33,12 +48,12 @@ const MyName = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="header-text"><span className='hola'>Hola!, </span> Soy Leonel ...{""}</h1>
-      
-      <p id="textoTypeIt" className="typeit-text"></p>
-    
-    
+    <div className="myname-container">
+      <h1 ref={nombreRef} className="header-text">
+        <span id='inicio' className="hola">¡Hola! Soy </span>
+        <span className="nombre">LEONEL</span>
+      </h1>
+      <p ref={textoRef} className="typeit-text"></p>
     </div>
   );
 };

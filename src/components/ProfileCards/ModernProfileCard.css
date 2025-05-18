@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.modern-profile-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0;
+  margin-top: 90px;
+  padding: 20px;
+  
+}
+
+.modern-profile-card-container.visible {
+  opacity: 1;
+}
+
+.modern-profile-card {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 70px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile-description {
+  flex: 1;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-description p {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  flex: 1;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start; /* alinea a la izquierda */
+  align-items: center;
+  margin-right: 60px;
+  position: relative;
+}
+
+.profile-image:hover.profile-image img {
+  transform: scale(1.1); /* aumenta el tamaño de la imagen al pasar el mouse */
+  transition: transform 0.3s ease; /* suaviza la transición */
+}
+
+.profile-image img {
+  width: 200%; /* aumenta el ancho más allá del 100% para agrandar */
+  height: auto; /* para mantener proporción */
+  border-radius: 0 20px 20px 0;
+  background-color: transparent;
+  object-fit: contain; /* para escalar la imagen dentro del contenedor */
+}
+
+
+.download-cv {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #0056b3;
+}
+
+.cv-icon {
+  width: 25px;
+  margin-right: 10px;
+}
+

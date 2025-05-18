@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handleDownloadCV = () => {
     // Reemplaza 'ruta/cv.pdf' con la ruta real de tu archivo CV
-    window.location.href = 'ruta/cv.pdf';
+    window.location.href = '';
     // Cierra el menú después de hacer clic en un ítem
     setMenuOpen(false);
   };

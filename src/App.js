@@ -1,19 +1,19 @@
 import './App.css';
-import BackgroundVideo from './components/FondoAnimado/FondoAnimado';
 import Contacto from './components/FoterContacto/Contacto';
 import Navbar from './components/Navbar/Navbar';
-import ProfileCard from './components/ProfileCards/ProfileCards';
+import ModernProfileCard from './components/ProfileCards/ModernProfileCard';
 import PropuestaCard from './components/Propuestas/Propuesta';
 import SobreMi from './components/SobreMi/SobreMi';
 import Footer from './components/Footer/Footer';
+import GradientBackground from './components/FondoAnimado/GradientBackground';
 
 function App() {
   return (
 
     <>
+      <GradientBackground/>
       <Navbar />
-      <BackgroundVideo />
-      <ProfileCard/>
+      <ModernProfileCard/>
       <SobreMi/>
       <PropuestaCard/>
       <Contacto />

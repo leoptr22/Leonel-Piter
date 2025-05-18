@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Propuesta.css';
-import '../ProfileCards/ProfileCard.css';
+
 import Modal from './Modal';
 import { useInView } from 'react-intersection-observer';
 

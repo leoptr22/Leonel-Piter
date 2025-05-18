@@ -1,5 +1,5 @@
 /* Propuesta.css */
-@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* Agregamos un margen inferior a los elementos Slider */
 .Slider {
@@ -23,14 +23,14 @@
 
 /* Estilos para las tarjetas de propuesta */
 .propuesta-card {
-    width: 90%;
+    width: 95%;
     height: auto;
     border: none;
     border-radius: 40px 10px 10px 40px;
-    box-shadow: 0 8px 16px rgba(194, 190, 190, 0.2);
-    transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    
     perspective: 1000px;
-    background-color: black;
+   
     opacity: 0.8;
     overflow: hidden;
     position: relative;
@@ -38,10 +38,7 @@
     cursor: pointer;
 }
 
-.propuesta-card:hover {
-    transform: rotateY(20deg);
-  box-shadow: 0 22px 28px rgba(195, 195, 200, 0.484);
-}
+
 
 .profile-content {
     display: flex;
@@ -97,10 +94,13 @@
 }
 
 .tituloPropuesta {
-    font-size: 20px;
-    color: rgb(189, 193, 193);
+    font-size: 25px;
+    color: #fff;
+      text-transform: uppercase;
+
     text-align: center;
-    font-family: 'Codystar', sans-serif;
+      font-family: 'Poppins', sans-serif;
+
 }
 
 /* Estilos adicionales para el slider */

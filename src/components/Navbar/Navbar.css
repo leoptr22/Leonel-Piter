@@ -30,14 +30,14 @@ color: #ffffff;
 
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
-  text-align: center; /* Centra el contenido del texto */
+  text-align: right; /* Alinea el contenido hacia la derecha */
   top: 0; /* Coloca la navbar en la parte superior de la página */
   width: 100%; /* Hace que la navbar abarque todo el ancho de la página */
   margin-bottom: 200px; /* Espacio inferior de 200px */
-  height: 30px;
-  background-color: black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
-  padding: 20px 0; /* Espaciado interno en la parte superior e inferior */
+  height: 60px; /* Aumenté la altura para un mejor diseño */
+  margin-right: 30px;
+  
+  padding: 10px 10px; /* Espaciado interno en la parte superior e inferior */
   z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
 }
 
@@ -46,24 +46,26 @@ color: #ffffff;
   margin: 0; /* Quita el margen por defecto */
   padding: 0; /* Quita el relleno por defecto */
   display: flex; /* Usa flexbox para la disposición */
-  justify-content: center; /* Centra los ítems en el eje horizontal */
+  justify-content: flex-end; /* Alinea los ítems a la derecha */
   align-items: center; /* Centra los ítems en el eje vertical */
 }
 
 .navbar ul li {
-  margin: 0 10px; /* Margen horizontal entre los ítems de la lista */
+  margin: 0 15px; /* Margen horizontal entre los ítems de la lista */
 }
 
 .navbar ul li a {
-  display: block; /* Hace que el enlace sea un bloque */
   color: white; /* Color del texto del enlace */
-  text-align: center; /* Centra el texto del enlace */
-  padding: 14px 16px; /* Espaciado interno en el enlace */
+  padding: 10px 15px; /* Espaciado interno en el enlace */
   text-decoration: none; /* Quita el subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+  font-weight: 600; /* Peso de la fuente */
 }
 
 .navbar ul li a:hover {
-  background-color: #111; /* Cambia el color de fondo al pasar el ratón */
+  background-color: #444; /* Cambia el color de fondo al pasar el ratón */
+  color: #ff7e5f; /* Cambia el color del texto al pasar el ratón */
 }
 
 /* Estilos para el botón de menú en dispositivos móviles */
@@ -83,29 +85,23 @@ color: #ffffff;
     display: none; /* Oculta el menú */
     flex-direction: column; /* Dispone los ítems en columna */
     width: 100%; /* Hace que el menú abarque todo el ancho */
-    
   }
-
-
-  
 
   .navbar ul li {
     float: none; /* Quita el flote */
     width: 100%; /* Hace que los ítems abarquen todo el ancho */
-    
   }
 
   .navbar .menu-button {
     display: block;
-        background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
   }
 
   .navbar ul.show {
     display: flex; /* Muestra el menú cuando se activa la clase 'show' */
   }
 
-  .show{
+  .show {
     background-color: black;
-
   }
 }
