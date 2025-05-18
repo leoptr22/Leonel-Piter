@@ -73,7 +73,7 @@ const PropuestaCard = () => {
         ))}
       </div>
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        <p>{descripcionModal}</p>
+        <p className='modal'>{descripcionModal}</p>
       </Modal>
     </div>
   );

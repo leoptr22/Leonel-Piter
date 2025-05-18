@@ -123,6 +123,12 @@
     max-width: none;
     height: auto;
 }
+.modal{
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
