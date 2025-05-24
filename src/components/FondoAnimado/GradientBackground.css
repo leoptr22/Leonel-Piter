@@ -11,21 +11,23 @@
 .gradient-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #96adc5 0%, #1e3a8a 50%, #1f2937 100%);
+    background: linear-gradient(135deg, #4371a3 0%, #1e3a8a 50%, #1f2937 100%);
     opacity: 0.9;
 }
 
 .gradient-bubble {
     position: absolute;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(170px);
+        background-color: #586885;
+
     opacity: 0.4;
 }
 
 .gradient-bubble-1 {
     width: 1400px;
     height: 1400px;
-    background-color: #3b82f6;
+    background-color: rgb(15 23 42 );
     top: -200px;
     left: -200px;
 }
@@ -33,7 +35,7 @@
 .gradient-bubble-2 {
     width: 1200px;
     height: 1200px;
-    background-color: #8b5cf6;
+    background-color: #0f0c30;
     bottom: -150px;
     right: -150px;
 }

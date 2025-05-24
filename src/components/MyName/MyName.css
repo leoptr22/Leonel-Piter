@@ -14,12 +14,12 @@
   font-family: 'Poppins', sans-serif;
   font-size: 5rem;
   font-weight: 700;
-  background: linear-gradient(30deg, rgba(13, 15, 11), rgba(5, 1, 10));
+  
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: glow 2s ease-in-out infinite alternate;
-}
+  color: transparent;
+  background-image: linear-gradient(135deg, #232853, #010233, #152750);
+  }
 
 /* Texto Hola */
 .hola {
@@ -32,19 +32,19 @@
 .typeit-text, .typeit-text span {
   font-family: 'Athiti', sans-serif !important;
   font-size: 50px !important;
-  color: #030303 !important;
+  color: #f4f3f5 !important;
   font-weight: 900 !important;
   letter-spacing: 2px !important;
-  text-shadow: 0 0 5px #80aebb, 0 0 10px #33545e, 0 0 15px #15f169 !important;
+  text-shadow: 0 0 5px #3f6e7a, 0 0 10px #33545e, 0 0 15px  !important;
   white-space: nowrap !important;
 }
 
 /* Animaciones */
 @keyframes glow {
   0% {
-    text-shadow: 0 0 10px #04BEF1, 0 0 20px #04BEF1, 0 0 30px #04BEF1;
+    text-shadow: 0 0 10px #051a20, 0 0 20px #04BEF1, 0 0 30px #04BEF1;
   }
   100% {
-    text-shadow: 0 0 20px #04BEF1, 0 0 30px #04BEF1, 0 0 40px #04BEF1;
+    text-shadow: 0 0 20px #072129, 0 0 30px #04BEF1, 0 0 40px #04BEF1;
   }
 }

@@ -37,7 +37,7 @@
 p {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  color: #000000;
+  color: #f7f5f5;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -70,7 +70,7 @@ p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #080808;
+  color: #f7f4f4;
 }
 
 .card-habilidades-valores {
@@ -82,13 +82,13 @@ p {
 }
 
 .card-section:hover {
-  background: -webkit-linear-gradient(135deg, #7a72e2, #4a4e8d);
+  background: -webkit-linear-gradient(135deg, #2c2958, #0a0c30);
   transform: scale(1.02);
-  box-shadow: 0 15px 30px rgba(175, 122, 122, 0.2);
+  box-shadow: 0 15px 30px rgba(68, 87, 122, 0.2);
 }
 
 .card-section {
-  background: -webkit-linear-gradient(135deg, #7a72e2, #4a4e8d);
+  background: -webkit-linear-gradient(18deg,  rgb(33, 47, 80), #1b155c);
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
