@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Sobremi.css";
 import { useInView } from "react-intersection-observer";
-import yojaja from "../../assets/yojaja.png";
+import CircularText from "../ListaAnimada/CircularText"; // Asegúrate de que la ruta sea correcta
+import { motion } from "framer-motion"; // Asegúrate de tener framer-motion instalado
 
 const SobreMi = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,12 +15,22 @@ const SobreMi = () => {
   }, [inView]);
 
   return (
+    
     <div
       id="inicio"
       className={`profile-card-container-sobremi ${isVisible ? "visible" : ""}`}
       ref={ref}
     >
+      
       <div id="sobre-mi" className="profile-card-sobremi">
+
+       <CircularText
+        text="LEONEL*PITER*DESARROLLO WEB*"
+        onHover="speedUp"
+        spinDuration={20}
+        className="circular-text"
+      />
+        
         <div className="profile-content-sobremi">
           <div className={`summarySobreMi ${isVisible ? "slide-in-left" : ""}`}>
             <h1 className="tituloSobremi">Sobre Mí</h1>

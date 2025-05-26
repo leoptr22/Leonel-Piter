@@ -7,14 +7,21 @@ import SobreMi from './components/SobreMi/SobreMi';
 import Footer from './components/Footer/Footer';
 import GradientBackground from './components/FondoAnimado/GradientBackground';
 
+
+import CircularText from './components/ListaAnimada/CircularText';
+
+
 function App() {
   return (
 
     <>
       <GradientBackground/>
+     
       <Navbar />
+      
       <ModernProfileCard/>
       <SobreMi/>
+       
       <PropuestaCard/>
       <Contacto />
       <Footer/>

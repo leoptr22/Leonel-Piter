@@ -51,7 +51,6 @@ const MyName = () => {
     <div className="myname-container">
       <h1 ref={nombreRef} className="header-text">
         <span id='inicio' className="hola">¡Hola! Soy </span>
-        <span className="nombre">LEONEL</span>
       </h1>
       <p ref={textoRef} className="typeit-text"></p>
     </div>
