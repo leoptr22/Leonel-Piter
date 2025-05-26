@@ -1,4 +1,3 @@
-import './Nombre.css';
 
 const GlitchText = ({
   children,

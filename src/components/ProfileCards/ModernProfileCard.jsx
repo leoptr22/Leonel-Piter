@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ModernProfileCard.css';
 import MyName from '../MyName/MyName';
+import '../MyName/Nombre.css';
 import modernImage from '../../assets/2.png';
 import cvIcon from '../../assets/iconocv.png';
 import { useInView } from 'react-intersection-observer';
@@ -25,7 +26,7 @@ const ModernProfileCard = () => {
       <div className="modern-profile-card">
         <div className="profile-description">
           <MyName />
-          <GlitchText className="glitch-text" speed={1} enableShadows={true} enableOnHover={true}>
+          <GlitchText className="glitch" speed={1} enableShadows={true} enableOnHover={true}>
             LEONEL PITER </GlitchText>
           <p>
 Con más de 15 años en control de calidad en manufactura, me especializo en asegurar la excelencia en productos y procesos. Ahora, en mi camino hacia el desarrollo web en la UNER, profundizo en tecnologías como JavaScript, HTML, CSS, React, Python y Scala .... para impulsar la transformación digital de las empresas, mejorando tanto la calidad como la eficiencia.          </p>
