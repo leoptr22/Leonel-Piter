@@ -15,7 +15,6 @@
 
 .profile-card1 {
   /* Efecto de inclinación */
-  transform: rotateZ(1deg);
   position: relative;
   width: 90%;
   height: 80%;
@@ -28,7 +27,8 @@
   /* Se aplica una transición suave para la transformación y la sombra */
   transition: transform 0.5s, box-shadow 0.5s;
   perspective: 1000px;
-  background-color: black;
+  background-color:    linear-gradient(135deg, #4371a3 0%, #1e3a8a 50%, #1f2937 100%);
+;
   opacity: 0.8; /* Opacidad predeterminada */
   overflow: hidden;
 }
