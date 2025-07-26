@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animación personalizada para el delay */
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+/* Mejoras para el botón flotante */
+.whatsapp-float {
+  backdrop-filter: blur(10px);
+}
+
+/* Asegurar que el botón esté siempre visible */
+@media (max-width: 640px) {
+  .whatsapp-float {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

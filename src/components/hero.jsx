@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 export function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a]">
+    
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Leonel Piter</h1>
