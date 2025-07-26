@@ -48,7 +48,6 @@ export function Navbar() {
               }`}
             >
               <p>&lt; LEONEL PITER /&gt;</p>
- 
             </button>
           </div>
 
@@ -93,15 +92,19 @@ export function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-slate-700 hover:text-slate-900 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors"
-                >
-                  {item.name}
-                </button>
+            <div className="px-1 pt-1 pb-2 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg">
+              {navItems.map((item, index) => (
+                <React.Fragment key={item.name}>
+                  <button
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-slate-700 hover:text-slate-900 hover:bg-gray-100 block px-3 py-3 rounded-md text-base font-medium w-full text-left transition-colors"
+                  >
+                    {item.name}
+                  </button>
+                  {index < navItems.length - 1 && (
+                    <hr className="border-gray-200 mx-2" />
+                  )}
+                </React.Fragment>
               ))}
             </div>
           </div>

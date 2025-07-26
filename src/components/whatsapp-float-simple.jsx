@@ -15,8 +15,8 @@ export function WhatsAppSimple() {
       onClick={handleWhatsAppClick}
       style={{
         position: "fixed",
-        bottom: "20px",
-        right: "20px",
+        bottom: "50px",
+        right: "30px",
         width: "60px",
         height: "60px",
         backgroundColor: "#25D366",
