@@ -58,10 +58,10 @@ export function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-white/10 ${
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isScrolled 
-                      ? 'text-slate-700 hover:text-slate-900' 
-                      : 'text-gray-300 hover:text-white'
+                      ? 'text-slate-700 hover:text-slate-900 hover:bg-gray-300' 
+                      : 'text-gray-300 hover:text-black hover:bg-white/10'
                   }`}
                 >
                   {item.name}
@@ -76,7 +76,7 @@ export function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md transition-colors ${
                 isScrolled 
-                  ? 'text-slate-700 hover:text-slate-900 hover:bg-gray-100' 
+                  ? 'text-slate-700 hover:text-slate-900 hover:bg-gray-300' 
                   : 'text-gray-400 hover:text-white hover:bg-white/10'
               }`}
             >
@@ -97,7 +97,7 @@ export function Navbar() {
                 <React.Fragment key={item.name}>
                   <button
                     onClick={() => scrollToSection(item.href)}
-                    className="text-slate-700 hover:text-slate-900 hover:bg-gray-100 block px-3 py-3 rounded-md text-base font-medium w-full text-left transition-colors"
+                    className="text-slate-700 hover:text-slate-900 hover:bg-gray-300 block px-3 py-3 rounded-md text-base font-medium w-full text-left transition-colors"
                   >
                     {item.name}
                   </button>

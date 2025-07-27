@@ -1,5 +1,4 @@
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
-
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -37,7 +36,7 @@ export function Hero() {
           <Button asChild variant="default" size="lg">
             <a href="#projects">Ver Proyectos</a>
           </Button>
-          <Button asChild variant="outline" size="lg">
+          <Button asChild variant="outline" size="lg" className="bg-transparent text-white border border-white hover:bg-white hover:text-black transition-colors">
             <a href="#contact">Contactar</a>
           </Button>
         </div>
