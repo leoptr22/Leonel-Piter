@@ -1,11 +1,25 @@
+import RippleGrid from './ui/RippleGrid'; // Asegúrate de que la ruta sea correcta
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a]">
-    
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] relative overflow-hidden">
+      {/* Componente Orb como fondo */}
+      <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
+  <RippleGrid
+      particleColors={['#ffffff', '#ffffff']}
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleBaseSize={100}
+    moveParticlesOnHover={true}
+    alphaParticles={false}
+    disableRotation={false}
+  />
+</div>
+      
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Leonel Piter</h1>
           <h2 className="text-xl md:text-2xl text-gray-300 mb-6">

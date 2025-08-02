@@ -47,8 +47,7 @@ export function Navbar() {
                 isScrolled ? 'text-slate-900' : 'text-white'
               }`}
             >
-              <p>&lt; LEONEL PITER /&gt;</p>
-            </button>
+<p style={{ fontFamily: 'Arial, sans-serif', fontWeight: '300', fontSize: '24px', color: '#ffffff' }}>&lt; LEONEL PITER /&gt;</p>            </button>
           </div>
 
           {/* Desktop Menu */}
