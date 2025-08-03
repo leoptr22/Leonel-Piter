@@ -67,11 +67,11 @@ export function Projects() {
                     alt={project.title}
                     className="mt-4 w-full h-64 lg:h-full object-cover"
                   />
-                  {project.featured && <Badge className="absolute top-4 left-4 bg-slate-900">Proyecto Destacado</Badge>}
+                  {project.featured && <Badge className="absolute top-4  left-4 bg-slate-900">Proyecto Destacado</Badge>}
                 </div>
                 <div className="p-6 lg:p-8">
                   <CardHeader className="p-0 mb-4">
-                    <CardTitle className="text-xl text-slate-900 mb-2">{project.title}</CardTitle>
+                    <CardTitle className="text-xl text-slate-900  mb-2">{project.title}</CardTitle>
                     <p className="text-slate-600">{project.description}</p>
                   </CardHeader>
                   <CardContent className="p-0">
