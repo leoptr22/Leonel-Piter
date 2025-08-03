@@ -9,7 +9,7 @@ export function Projects() {
     {
       title: "Generación de Códigos y Consulta de Lotes ",
       description: "Generador de códigos automáticos que calcula el día del año y crea códigos para productos según reglas específicas, Consulta de lotes en tiempo real a través de datos en Google Sheets, permitiendo saber el último lote de productos, Construida con React y diseñada para agilizar tareas y mejorar la gestión de información en procesos de control de calidad.",
-      image: "/codigo.png?height=300&width=500",
+      image: "/1.png?height=300&width=500",
       technologies: ["React", "Node.js", "App Sheet", "Firebase"],
       problem: "Errores en la generacion de codigos/lotes",
       solution: "Interfaz intuitiva para control, seguimiento y análisis de datos de calidad",
@@ -20,7 +20,7 @@ export function Projects() {
     {
       title: "Gestor de busqueda de COAS ",
       description: "Aplicación web desarrollada para la búsqueda sincronizada, consulta y carga de registros digitales de control de calidad en formato PDF, por lote. Especialmente útil para laboratorios o áreas técnicas que trabajan con documentación digital por producto/lote.",
-      image: "/archivos.png?height=300&width=500",
+      image: "/2.png?height=300&width=500",
       technologies: ["Html", "JavaScript (vainilla)", "Css", "Firebase"],
       problem: "Falta de espacio y perdida de tiempo en la busqueda, quien lo necesite tiene acceso inmediato",
       solution: "Busqueda letra por letra de documentos digitalizados",
@@ -31,7 +31,7 @@ export function Projects() {
     {
       title: "Gestor de Contra-muestras",
       description: "Aplicación web desarrollada con React para registrar y consultar datos de contra-muestras en procesos productivos. Ideal para laboratorios, sectores de calidad o producción que requieren trazabilidad de forma ágil y centralizada.",
-      image: "/contramuestra.png?height=300&width=500",
+      image: "/3.png?height=300&width=500",
       technologies: ["Vite", "React", "Css", "Fetch API + Google Apps Script"],
       problem: "Generacion de registros y falta de practicidad",
       solution: "Registro in situ y consulta on line",
@@ -65,7 +65,7 @@ export function Projects() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-64 lg:h-full object-cover"
+                    className="mt-4 w-full h-64 lg:h-full object-cover"
                   />
                   {project.featured && <Badge className="absolute top-4 left-4 bg-slate-900">Proyecto Destacado</Badge>}
                 </div>

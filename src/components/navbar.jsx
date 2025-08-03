@@ -47,7 +47,16 @@ export function Navbar() {
                 isScrolled ? 'text-slate-900' : 'text-white'
               }`}
             >
-<p style={{ fontFamily: 'Arial, sans-serif', fontWeight: '300', fontSize: '24px', color: '#ffffff' }}>&lt; LEONEL PITER /&gt;</p>            </button>
+              <p style={{ 
+                fontFamily: 'Arial, sans-serif', 
+                fontWeight: '300', 
+                fontSize: '24px', 
+                color: isScrolled ? '#1e293b' : '#ffffff',
+                margin: 0 
+              }}>
+                &lt; LEONEL PITER /&gt;
+              </p>
+            </button>
           </div>
 
           {/* Desktop Menu */}
@@ -60,7 +69,7 @@ export function Navbar() {
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isScrolled 
                       ? 'text-slate-700 hover:text-slate-900 hover:bg-gray-300' 
-                      : 'text-gray-300 hover:text-black hover:bg-white/10'
+                      : 'text-gray-300 hover:text-white hover:bg-white/10'
                   }`}
                 >
                   {item.name}
@@ -96,7 +105,7 @@ export function Navbar() {
                 <React.Fragment key={item.name}>
                   <button
                     onClick={() => scrollToSection(item.href)}
-                    className="text-slate-700 hover:text-slate-900 hover:bg-gray-300 block px-3 py-3 rounded-md text-base font-medium w-full text-left transition-colors"
+                    className="text-slate-900 hover:text-slate-700 hover:bg-gray-100 block px-3 py-3 rounded-md text-base font-medium w-full text-left transition-colors"
                   >
                     {item.name}
                   </button>
