@@ -67,7 +67,7 @@ export function About() {
       title: "Trabajo en Equipo",
       description: "Experiencia colaborando en mejoras de producción y proyectos multidisciplinarios",
     },
-  ]
+  ];
 
   // Función para determinar la dirección de animación
   const getAnimationDirection = (index) => {
@@ -76,9 +76,9 @@ export function About() {
       { transform: "translateX(40px) scale(0.8)", class: "translate-x-10 scale-80" },
       { transform: "translateY(40px) scale(0.8)", class: "translate-y-10 scale-80" },
       { transform: "translateX(-40px) scale(0.8)", class: "-translate-x-10 scale-80" },
-    ]
-    return directions[index % 4]
-  }
+    ];
+    return directions[index % 4];
+  };
 
   return (
     <section id="about" className="py-20 px-4 bg-white">
@@ -113,12 +113,12 @@ export function About() {
         {/* Grid de highlights con animaciones */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {highlights.map((item, index) => {
-            const animation = getAnimationDirection(index)
+            const animation = getAnimationDirection(index);
 
             return (
               <div
                 key={index}
-                className={`bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-700 opacity-0 ${animation.class}`}
+                className={`bg-white border border-slate-200 rounded-lg shadow-sm transition-all duration-700 opacity-0 ${animation.class} hover:bg-slate-100 hover:shadow-lg hover:-translate-y-1`}
                 data-animate
                 data-index={`highlight-${index}`}
                 style={{
@@ -136,11 +136,11 @@ export function About() {
                       animationDelay: `${600 + index * 150}ms`,
                     }}
                   />
-                  <h3 className="font-semibold text-slate-900 mb-2">{item.title}</h3>
-                  <p className="text-sm text-slate-600">{item.description}</p>
+                  <h3 className="font-semibold text-slate-900 mb-2 transition-transform duration-300 hover:text-blue-600">{item.title}</h3>
+                  <p className="text-sm text-slate-600 transition-colors duration-300 hover:text-blue-500">{item.description}</p>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
 
@@ -197,5 +197,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
