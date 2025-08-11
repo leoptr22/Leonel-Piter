@@ -1,7 +1,7 @@
 import RippleGrid from './ui/RippleGrid'; // Asegúrate de que la ruta sea correcta
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
-
+import TextPressure from './ui/TextPressure';
 export function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] relative overflow-hidden">
@@ -21,7 +21,23 @@ export function Hero() {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Leonel Piter</h1>
+
+  <TextPressure
+    text="Leonel Piter"
+    flex={true}
+    alpha={false}
+    stroke={false}
+    width={true}
+    weight={true}
+    italic={true}
+    textColor="#ffffff"
+    strokeColor="#ff0000"
+    minFontSize={30}
+  />
+
+
+
+
           <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
             Checker de Calidad | Desarrollador Web en formación (UNER)
           </h2>
