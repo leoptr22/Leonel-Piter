@@ -26,14 +26,16 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
 
-<TrueFocus 
-sentence="Leonel Piter"
-manualMode={false}
-blurAmount={5}
-borderColor="red"
-animationDuration={2}
-pauseBetweenAnimations={1}
-/>
+         <div className="mb-4">
+  <TrueFocus 
+    sentence="Leonel Piter"
+    manualMode={false}
+    blurAmount={5}
+    borderColor="red"
+    animationDuration={2}
+    pauseBetweenAnimations={1}
+  />
+</div>
           <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
             Checker de Calidad | Desarrollador Web en formación (UNER)
           </h2>
