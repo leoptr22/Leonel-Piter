@@ -1,4 +1,4 @@
-import RippleGrid from './ui/RippleGrid'; // Asegúrate de que la ruta sea correcta
+import RippleGrid from './ui/RippleGrid'; 
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import TrueFocus from './ui/TrueFocus';
@@ -26,16 +26,19 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
 
-         <div className="mb-4">
-  <TrueFocus 
-    sentence="Leonel Piter"
-    manualMode={false}
-    blurAmount={5}
-    borderColor="red"
-    animationDuration={2}
-    pauseBetweenAnimations={1}
-  />
-</div>
+            {/* H1 oculto para SEO */}
+             <h1 className="sr-only">Leonel Piter</h1>
+
+         <div className="mb-4" aria-hidden="true">
+        <TrueFocus 
+            sentence="Leonel Piter"
+            manualMode={false}
+            blurAmount={5}
+            borderColor="red"
+            animationDuration={2}
+            pauseBetweenAnimations={1}
+          />
+        </div>
           <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
             Checker de Calidad | Desarrollador Web en formación (UNER)
           </h2>
