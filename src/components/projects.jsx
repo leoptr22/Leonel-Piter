@@ -6,17 +6,18 @@ import { ExternalLink, Github } from 'lucide-react';
 
 export function Projects() {
   const projects = [
-    {
-      title: "Generación de Códigos y Consulta de Lotes ",
-      description: "Generador de códigos automáticos que calcula el día del año y crea códigos para productos según reglas específicas, Consulta de lotes en tiempo real a través de datos en Google Sheets, permitiendo saber el último lote de productos, Construida con React y diseñada para agilizar tareas y mejorar la gestión de información en procesos de control de calidad.",
-      image: "/1.png?height=300&width=500",
-      technologies: ["React", "Node.js", "App Sheet", "Firebase"],
-      problem: "Errores en la generacion de codigos/lotes",
-      solution: "Interfaz intuitiva para control, seguimiento y análisis de datos de calidad",
-      github: "https://github.com/leoptr22/generacion-codigos",
-      demo: "https://generacion-codigos.vercel.app/app",
-      featured: true,
-    },
+   {
+  title: "Clínica IDW",
+  description: "Sitio web colaborativo para la gestión integral de una clínica médica. Permite reservar turnos, administrar médicos y visualizar solicitudes. Desarrollado con HTML, CSS, JavaScript y Bootstrap, con almacenamiento de datos mediante LocalStorage y SessionStorage, e inicio de sesión conectado a la API pública DummyJSON. Proyecto académico en equipo con control de versiones por ramas en Git, donde desempeñé el rol de líder de proyecto (PM).",
+  image: "/idw.png?height=50&width=50",
+  technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "API DummyJSON", "LocalStorage", "SessionStorage", "Git"],
+  problem: "Falta de una herramienta web que centralice la gestión de turnos y personal médico.",
+  solution: "Desarrollo de una aplicación web con módulo público y panel de administración, permitiendo reservas de turnos, gestión de médicos e integración con API para login seguro.",
+  github: "https://github.com/leoptr22/IDW_27",
+  demo: "https://leoptr22.github.io/IDW_27/index.html",
+  featured: true
+}
+,
     {
       title: "Gestor de busqueda de COAS ",
       description: "Aplicación web desarrollada para la búsqueda sincronizada, consulta y carga de registros digitales de control de calidad en formato PDF, por lote. Especialmente útil para laboratorios o áreas técnicas que trabajan con documentación digital por producto/lote.",
